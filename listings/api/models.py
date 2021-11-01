@@ -2,29 +2,6 @@ from django.db import models
 
 
 class House(models.Model):
-    # SQFT = 'SqFt'
-    # SQM = 'Sqm'
-    # AREA_UNIT_CHOICES = [
-    #     (SQFT, 'Squared Feet'),
-    #     (SQM, 'Squared Metres'),
-    # ]
-    # area_unit = models.CharField(
-    #     max_length=8,
-    #     choices=AREA_UNIT_CHOICES,
-    #     default=SQFT,
-    # )
-
-    # SINGLE_FAMILY = 'singlefamily'
-    # AREA_UNIT_CHOICES = [
-    #     (SQFT, 'Squared Feet'),
-    #     (SQM, 'Squared Metres'),
-    # ]
-    # area_unit = models.CharField(
-    #     max_length=8,
-    #     choices=AREA_UNIT_CHOICES,
-    #     default=SQFT,
-    # )
-
     area_unit = models.CharField(max_length=32)
     bathrooms = models.DecimalField(
         decimal_places=1, max_digits=4, blank=True, null=True)

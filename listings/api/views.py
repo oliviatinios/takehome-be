@@ -10,7 +10,7 @@ class HouseList(generics.ListCreateAPIView):
     serializer_class = HouseSerializer
 
 
-# DELETE, PATCH, PUT
+# GET, DELETE, PUT
 class HouseDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = House.objects.all()
     serializer_class = HouseSerializer
